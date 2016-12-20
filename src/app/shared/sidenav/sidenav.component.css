@@ -1,0 +1,99 @@
+md-sidenav {
+  width: 160px;
+  padding: 10px;
+}
+
+.side-nav {
+  background-color: #0b4a72;
+}
+
+.sidenav-title-top {
+  height: 50px;
+  background-color: #104173;
+  font-size: medium;
+  font-weight: bolder;
+  color: #ffffff;
+  padding: 5px;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.sidenav-title-top-name {
+  font-size: small;
+  font-weight: bolder;
+  color: #ffffff;
+  padding: 10px;
+  float: left;
+}
+
+.sidenav-title-top-status {
+  font-size: small;
+  font-weight: bolder;
+  color: #e2e140;
+  background: #1d7326;
+  padding: 10px;
+  float: right;
+}
+
+.sidenav-title-bar {
+  font-size: small;
+  font-weight: bold;
+  color: #6aa1b0;
+  padding: 10px 5px 10px 5px;
+}
+
+a:link {
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  /*color: black ;*/
+  background-color: #4b7784;
+}
+
+.sidenav-menu-name {
+  font-size: small;
+  font-weight: bold;
+  color: #e0e0e0;
+}
+
+.sidenav-menu-desc {
+  font-size: x-small;
+  font-weight: normal;
+  color: #6aa1b0;
+}
+
+.sidenav-menu-icon {
+  color: #ffffff;
+}
+
+.sidenav-list-item {
+  margin: 0px;
+  padding: 5px 10px 5px 10px;
+  display: block;
+}
+
+.sidenav-profile {
+  width: 80px;
+  height: 80px;
+  border-width: thin;
+  background-color: #c5cae9;
+  display: block;
+}
+
+.sidenav-profile-bar {
+  width: 100%;
+  height: 140px;
+  background-color: #212121;
+  display: block;
+  border-width: thin;
+  padding:10px 10px 10px 10px;
+}
+
+.sidenav-profile-bar-label {
+  font-size: small;
+  font-weight: bold;
+  color: #ffffff;
+}
+

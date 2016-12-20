@@ -1,0 +1,65 @@
+<md-sidenav-layout fullscreen>
+  <md-sidenav #start mode="side" opened="true" class="side-nav">
+    <div class="sidenav-title-top">
+      <span class="sidenav-title-top-name">ivchan</span> <span class="sidenav-title-top-status">online</span>
+    </div>
+    <div class="sidenav-title-bar">
+      <span class="float:left">team channels</span>
+      <span class="float-right"><a [routerLink]="['/channelcreate']"><i class="material-icons sidenav-menu-icon">add</i></a></span>
+    </div>
+    <md-list>
+      <div *ngFor="let channel of lstPublicChannels; let i = index;" class="sidenav-list-item">
+        <div>
+          <a [routerLink]="['/channel', channel.channelKey]" class="sidenav-menu-name">
+            # {{channel.channelName}}
+          </a>
+          <i class="material-icons sidenav-menu-icon md-18 float-right">star_border</i>
+        </div>
+        <div>
+          <span class="sidenav-menu-desc">{{channel.channelDescription}}</span>
+        </div>
+      </div>
+    </md-list>
+    <hr style="height:10pt; visibility:hidden;" />
+    <div class="sidenav-title-bar">
+      <span style="float:left">private channels</span>
+      <span class="float-right"><i class="material-icons sidenav-menu-icon">add</i></span>
+    </div>
+    <md-list>
+      <div *ngFor="let channel of lstPrivateChannels; let i = index;" class="sidenav-list-item">
+        <div>
+          <a [routerLink]="['/channel', channel.channelKey]" class="sidenav-menu-name">
+            # {{channel.channelName}}
+          </a>
+          <i class="material-icons sidenav-menu-icon md-18 float-right">star_border</i>
+        </div>
+        <div>
+          <span class="sidenav-menu-desc">{{channel.channelDescription}}</span>
+        </div>
+      </div>
+    </md-list>
+    <div class="sidenav-title-bar">
+      <span style="float:left">private messages</span>
+    </div>
+    <md-list>
+      <div class="sidenav-list-item">
+        <div>
+          <span class="sidenav-menu-desc">You have 5 unread pm.</span>
+        </div>
+      </div>
+    </md-list>
+
+    <md-list>
+      <div class="sidenav-list-item">
+        <div>
+          <a [routerLink]="['/login']" class="sidenav-menu-name">
+            Login
+          </a>
+        </div>
+      </div>
+    </md-list>
+  </md-sidenav>
+  <div>
+    <router-outlet></router-outlet>
+  </div>
+</md-sidenav-layout>

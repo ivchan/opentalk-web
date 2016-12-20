@@ -1,0 +1,7 @@
+<div *ngFor="let message of lstMessages; let i = index;" class="chat-history-message">
+  <div>
+    <span class="chat-history-message-username">{{message.userName}}</span>
+    <span class="chat-history-message-date">{{message.createDate | date: 'dd/MM/yyyy'}}</span>
+  </div>
+  <span class="chat-history-message-content">{{message.content}}</span>
+</div>

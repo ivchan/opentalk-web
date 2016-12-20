@@ -1,0 +1,15 @@
+<div layout="column" layout-fill>
+  <md-toolbar class="md-tall channel-topbar row header">
+    # {{channelInfo.channelName}}
+    <span class="channel-topbar-subtitle">{{channelInfo.channelDescription}}</span>
+    <i class="material-icons channel-topbar-icon float-right">star_border</i>
+    <i class="material-icons channel-topbar-icon float-right">date_range</i>
+    <i class="material-icons channel-topbar-icon float-right">clear</i>
+  </md-toolbar>
+  <div class="chat-message-history">
+    <app-chat-message-history></app-chat-message-history>
+  </div>
+  <div class="chat-message-input">
+    <app-chat-message-box></app-chat-message-box>
+  </div>
+</div>

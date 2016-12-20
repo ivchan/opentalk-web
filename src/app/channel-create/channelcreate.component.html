@@ -1,0 +1,18 @@
+<div class="channelcreate-card-container">
+  <md-card>
+    <md-card-header>
+      <md-card-title class="card-title">Create Channel</md-card-title>
+    </md-card-header>
+    <md-card-content>
+      <form>
+        <md-input id="channelName" name="channelName" class="channelName" placeholder="Channel Name" [(ngModel)]="channelName"></md-input>
+        <md-input id="channelPurpose" name="channelPurpose" class="channelPurpose" placeholder="Channel Purpose" [(ngModel)]="channelDesc"></md-input>
+        <md-input id="isPublic" name="isPublic" class="isPublic" placeholder="is public" [(ngModel)]="isPublic"></md-input>
+      </form>
+    </md-card-content>
+    <md-card-actions>
+      <button md-button (click)="save()">Save</button>
+      <button md-button (click)="cancel()">Cancel</button>
+    </md-card-actions>
+  </md-card>
+</div>
